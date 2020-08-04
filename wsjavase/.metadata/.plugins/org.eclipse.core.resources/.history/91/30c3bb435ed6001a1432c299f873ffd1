@@ -1,0 +1,16 @@
+package br.com.falhas.implementacao;
+
+public class TesteFalhas {
+
+	public static void main(String[] args) {
+		
+		try {
+		int numero = Integer.parseInt("A");
+		System.out.println(numero);
+		}catch(Exception e){
+			System.out.println("Deu ruim");
+			e.printStackTrace();
+		}
+	}
+
+}

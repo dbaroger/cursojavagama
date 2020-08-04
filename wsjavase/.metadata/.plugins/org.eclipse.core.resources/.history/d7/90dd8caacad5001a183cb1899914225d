@@ -1,0 +1,26 @@
+package br.com.universidade.implementacao;
+
+import br.com.universidade.modelo.Formacao;
+import br.com.universidade.modelo.Medio;
+import br.com.universidade.tela.Magica;
+
+public class TesteFomacao {
+
+	public static void main(String[] args) {
+		
+		Formacao formacao=null;
+		String descricao = Magica.t("Digite a Formacao"); 
+		
+		if (descricao.equals("MEDIO")) {
+			formacao = new Medio();
+			formacao.setDescricao(descricao);
+			formacao.setPeriodo(Magica.i("Periodo"));
+			formacao.definirDuracao();
+			formacao.calcularMensalidade(Magica.i("Fator"));
+			
+		}
+
+		System.out.println(formacao.getAll());
+	}
+
+}

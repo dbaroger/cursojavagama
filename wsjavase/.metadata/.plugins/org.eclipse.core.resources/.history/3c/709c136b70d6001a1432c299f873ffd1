@@ -1,0 +1,20 @@
+package br.com.colecoes.teste;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class TesteList {
+
+	public static void main(String[] args) {
+		List lista = new ArrayList();
+		lista.add("DBA");
+		lista.add(15000);
+		lista.add("ESTAGIARIO");
+		lista.add(2500);
+		lista.add("ANALISTA");
+		System.out.println(lista);
+		Collections.sort(lista);
+	}
+
+}

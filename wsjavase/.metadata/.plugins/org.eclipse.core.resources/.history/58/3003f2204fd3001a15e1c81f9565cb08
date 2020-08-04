@@ -1,0 +1,20 @@
+package br.com.ecommerce.implementacao;
+
+import javax.swing.JOptionPane;
+
+import br.com.ecommerce.modelo.Venda;
+
+public class TesteVenda {
+
+	public static void main(String[] args) {
+		Venda venda = new Venda(
+				JOptionPane.showInputDialog("NF"),
+				JOptionPane.showInputDialog("Cliente"),
+				JOptionPane.showInputDialog("Produto"),
+				venda.getTotal(),
+				JOptionPane.showInputDialog("Produto")
+				);
+
+	}
+
+}

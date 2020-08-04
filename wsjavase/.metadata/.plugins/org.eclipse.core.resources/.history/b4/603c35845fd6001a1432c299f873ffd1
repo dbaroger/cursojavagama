@@ -1,0 +1,32 @@
+package br.com.falhas.implementacao;
+
+public class TesteFalhas {
+
+	public static void main(String[] args) {
+		String palavra="a";
+		try {
+		int numero = Integer.parseInt("1");
+		System.out.println(numero);
+		
+		System.out.println(palavra.length());
+		
+		int x[] = new int[2];
+		x[0]=15;
+		x[1]=98;
+		x[2]=12;
+		
+		}catch(NumberFormatException e){
+			System.out.println("Numero Invalido");
+		}catch(NullPointerException e){
+			System.out.println("Objeto Nulo");
+		}catch(ArrayIndexOutOfBoundsException e){
+			System.out.println("Array excedido");
+		}catch(Exception e){
+			System.out.println("Deu ruim");
+			e.printStackTrace(); // mostra todo erro
+		}finally { // as linhas deste bloco serão executadas se houver ou não excecão
+			System.out.println("Tenha um bom dia!!!");
+		}
+
+}
+}	

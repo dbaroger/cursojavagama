@@ -1,0 +1,14 @@
+package br.com.universidade.teste;
+
+import br.com.universidade.modelo.Aluno;  // ctrl+shift+O  importa automaticamente
+
+public class TesteAluno {
+
+	public static void main(String[] args) {
+		
+		Aluno objeto = new Aluno();
+		objeto.nome = ""
+
+	}
+
+}

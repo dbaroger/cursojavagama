@@ -1,0 +1,21 @@
+package br.com.falhas.implementacao;
+
+public class TesteFalhas {
+
+	public static void main(String[] args) {
+		String palavra=null;
+		try {
+		int numero = Integer.parseInt("1");
+		System.out.println(numero);
+		System.out.println(palavra.length());
+		}catch(NumberFormatException e){
+			System.out.println("Numero Invalido");
+		}catch(NullPointerException e){
+			System.out.println("Objeto Nulo");
+		}catch(Exception e){
+			System.out.println("Deu ruim");
+			e.printStackTrace(); // mostra todo erro
+	}
+
+}
+}	

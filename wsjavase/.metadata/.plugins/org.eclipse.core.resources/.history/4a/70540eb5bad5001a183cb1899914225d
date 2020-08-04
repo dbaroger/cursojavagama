@@ -1,0 +1,47 @@
+package br.com.ecommerce.implementacao;
+
+import br.com.ecommerce.modelo.Cd;
+import br.com.ecommerce.modelo.Livro;
+import br.com.ecommerce.modelo.Produto;
+import br.com.ecommerce.tela.Magica;
+
+public class TesteProduto {
+
+	public static void main(String[] args) {
+		Produto produto=null;
+		
+		String escolha = Magica.t("Sigite a opcao LIVRO ou CD");
+		
+		if (escolha.equals("LIVRO")){
+			produto = new Livro(
+									Magica.i("ID"),
+									Magica.t("Descricao"),
+									Magica.i("Quantidade"),
+									Magica.f("Valor Compra"),
+									Magica.f("Valor Venda"),
+									Magica.t("Editora"),
+									Magica.t("Autor"),
+									Magica.i("ISBN")
+					);
+		}
+		else {
+			produto = new Cd(
+								Magica.i("ID"),
+								Magica.t("Descricao"),
+								Magica.i("Quantidade"),
+								Magica.f("Valor Compra"),
+								Magica.f("Valor Venda"),
+								Magica.t("Artista"),
+								Magica.t("Gravadora"),
+								Magica.t("Estilo")
+					);
+		}
+			
+			System.out.println(produto.getAll());
+			//System.out.println(produto.ver);
+			
+		}
+
+	}
+
+}

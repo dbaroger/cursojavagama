@@ -1,0 +1,56 @@
+package br.com.ecommerce.modelo;
+
+public class Cliente {
+	
+	private String cpf;
+	private String nome;
+	private String fone;
+	private float limite;
+	
+	public Cliente(String cpf, String nome, String fone, float limite) {
+		super();
+		this.cpf = cpf;
+		this.nome = nome;
+		this.fone = fone;
+		this.limite = limite;
+	}
+
+	public Cliente() {
+		super();
+	}
+
+	public String getCpf() {
+		return cpf;
+	}
+
+	public void setCpf(String cpf) {
+		this.cpf = cpf;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public String getFone() {
+		return fone;
+	}
+
+	public void setFone(String fone) {
+		this.fone = fone;
+	}
+
+	public float getLimite() {
+		return limite;
+	}
+
+	public void setLimite(float limite) {
+		this.limite = limite;
+	}
+	
+	
+
+}

@@ -1,0 +1,10 @@
+package br.com.ecommerce.modelo;
+
+public class Venda {
+	
+	private int numeroNotaFiscal;
+	private Cliente cliente;
+	private Produto produto;
+	private total float;
+	private String data;
+}

@@ -1,0 +1,23 @@
+package br.com.ecommerce.implementacao;
+
+import javax.swing.JOptionPane;
+
+import br.com.ecommerce.modelo.Cliente;
+import br.com.ecommerce.modelo.Produto;
+import br.com.ecommerce.modelo.Venda;
+
+public class TesteVenda {
+
+	public static void main(String[] args) {
+		Produto produto = new Produto();
+		Produto cliente = new Cliente();
+		Venda venda = new Venda(
+				JOptionPane.showInputDialog("NF"),
+				Cliente().getCpf(),
+				Produto().,
+				JOptionPane.showInputDialog("Data")
+				);
+
+	}
+
+}

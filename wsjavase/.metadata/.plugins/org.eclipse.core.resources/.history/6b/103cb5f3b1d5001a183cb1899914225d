@@ -1,0 +1,28 @@
+package br.com.universidade.teste;
+
+import br.com.universidade.modelo.Aluno;
+import br.com.universidade.modelo.Professor;
+import br.com.universidade.tela.Magica;
+
+public class TestePessoa {
+
+	public static void main(String[] args) {
+		
+		Aluno aluno = new Aluno();
+		Professor professor = new Professor();
+		String escolha = Magica.t("Sigite a opcao PRFESSOR ou ALUNO");
+		
+		if (escolha.equals("ALUNO")){
+			aluno.setAll(nome, endereco);
+			aluno.getAll();
+			}
+		else if (escolha.equals("PROFESSOR")){
+			professor.setAll(nome, endereco);
+			professor.getAll();
+			}
+		else {
+			System.out.println("Escolha invalida.");
+		} 
+
+}
+}

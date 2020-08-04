@@ -1,0 +1,45 @@
+package br.com.universidade.modelo;
+
+import br.com.universidade.interfaces.PadraoFormacao;
+
+public class Bacharelado extends Formacao implements PadraoFormacao{
+	
+	private String projetoConstrucao;
+	private int cargaHorariaEstagio;
+	
+	public void calcularMensalidade(double fator) {
+		super.setMensalidade((super.getDuracao()*fator*600)+(cargaHorariaEstagio*12));
+	}
+
+	public Bacharelado(String descricao, int periodo, double mensalidade, int duracao, String projetoConstrucao,
+			int cargaHorariaEstagio) {
+		super(descricao, periodo, mensalidade, duracao);
+		this.projetoConstrucao = projetoConstrucao;
+		this.cargaHorariaEstagio = cargaHorariaEstagio;
+	}
+
+	public Bacharelado() {
+		super();
+	}
+
+	public String getProjetoConstrucao() {
+		return projetoConstrucao;
+	}
+
+	public void setProjetoConstrucao(String projetoConstrucao) {
+		this.projetoConstrucao = projetoConstrucao;
+	}
+
+	public int getCargaHorariaEstagio() {
+		return cargaHorariaEstagio;
+	}
+
+	public void setCargaHorariaEstagio(int cargaHorariaEstagio) {
+		this.cargaHorariaEstagio = cargaHorariaEstagio;
+	}
+
+	
+	
+	
+
+}

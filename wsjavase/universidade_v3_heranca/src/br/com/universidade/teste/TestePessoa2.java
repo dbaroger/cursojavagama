@@ -1,0 +1,54 @@
+package br.com.universidade.teste;
+
+import br.com.universidade.modelo.Aluno;
+import br.com.universidade.modelo.Endereco;
+import br.com.universidade.modelo.Pessoa;
+import br.com.universidade.modelo.Professor;
+import br.com.universidade.tela.Magica;
+
+public class TestePessoa2 {
+
+	public static void main(String[] args) {
+		Pessoa pessoa=null;
+		
+		String escolha = Magica.t("Sigite a opcao PRFESSOR ou ALUNO");
+		
+		if (escolha.equals("ALUNO")){
+			pessoa = new Aluno(Magica.t("Nome"), 
+									new Endereco(
+												Magica.t("Logradouro"),
+												Magica.t("Numero"),
+												Magica.t("Complemento"),
+												Magica.t("Bairro"),
+												Magica.t("Cidade"),
+												Magica.t("UF"),
+												Magica.t("CEP")											
+											),
+									Magica.t("Email"),
+									Magica.i("RM")
+							);
+			}
+		else if (escolha.equals("PROFESSOR")){
+			pessoa = new Professor(	Magica.t("Nome"), 
+									new Endereco(
+												Magica.t("Logradouro"),
+												Magica.t("Numero"),
+												Magica.t("Complemento"),
+												Magica.t("Bairro"),
+												Magica.t("Cidade"),
+												Magica.t("UF"),
+												Magica.t("CEP")
+												),
+									Magica.t("Data Cotrataco"),
+									Magica.t("Titulacao"),
+									Magica.f("Valor Hora")
+									);
+			}
+		else {
+			System.out.println("Escolha invalida.");
+		} 
+		System.out.println(pessoa.getAll());
+		System.out.println(pessoa.verificarDados());
+
+}
+}

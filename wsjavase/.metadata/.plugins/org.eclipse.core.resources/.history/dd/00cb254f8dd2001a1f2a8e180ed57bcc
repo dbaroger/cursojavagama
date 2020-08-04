@@ -1,0 +1,18 @@
+package br.com.universidade.teste;
+
+import javax.swing.JOptionPane;
+
+import br.com.universidade.modelo.Aluno;  // ctrl+shift+O  importa automaticamente
+
+public class TesteAluno2 {
+
+	public static void main(String[] args) {
+		
+		Aluno objeto = new Aluno();
+		objeto.preencherTudo("Roger", "dbaroger@gmail.com", 987298318);
+		System.out.println(objeto.exibirTudo());
+		
+		//JOptionPane.showMessageDialog(null,  "Nome: " + objeto.exibirNome() + "\nEmail: " + objeto.exibirEmail() + "\nRM: " + objeto.exibirRm());
+	}
+
+}
